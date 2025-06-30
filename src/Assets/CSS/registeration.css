@@ -1,0 +1,73 @@
+:root {
+    --primary: #DA627D;
+    --secondary: #A53860;
+    --headers: #450920;
+    --background: #F9DBBD;
+    --text: #FFA5AB;
+  }
+  .auth-page {
+    background: linear-gradient(to right, #DA627D, #FFA5AB);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .back-home-wrapper {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+  
+  @media (max-width: 576px) {
+    .back-home-wrapper {
+      left: 1rem;
+      top: 1rem;
+    }
+  }
+  
+
+  .btn-outline-secondary {
+    border-color: var(--headers);
+    color: var(--headers);
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: var(--headers);
+    color: white;
+  }
+  
+  
+  .auth-box {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .auth-box h2 {
+    color: var(--headers);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .auth-box .btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+  
+  .auth-box .btn-primary:hover {
+    background-color: var(--headers);
+    border-color: var(--headers);
+  }
+  
+  .auth-box a {
+    color: var(--secondary);
+    text-decoration: none;
+  }
+  
+  .auth-box a:hover {
+    text-decoration: underline;
+  }
+  

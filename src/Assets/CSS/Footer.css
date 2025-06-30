@@ -1,0 +1,33 @@
+:root{
+    --primary: #DA627D; 
+    --secondary: #A53860; 
+    --headers: #450920; 
+    --background: #F9DBBD; 
+    --text: #FFA5AB; 
+    --white: #ffff; 
+}
+.footer {
+    background-color: var(--headers);
+    color: var(--text);
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .footer-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .footer-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: var(--primary);
+  }
+  
