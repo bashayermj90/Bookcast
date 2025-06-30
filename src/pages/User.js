@@ -1,11 +1,16 @@
-import React from 'react';
-import Navbar from '../Compnents/Navbar';
+import React, { useContext } from 'react';
+import Sidebar from '../components/Dashboard/Sidebar';
+import DashboardMain from '../components/Dashboard/DashboardMain';
+import "../Assets/CSS/User.css";
+import LoginContext from '../Context/LoginContext';
 
 function User() {
+  const { favorites = [] } = useContext(LoginContext);
+
   return (
-    <div>
-      <Navbar/>
-      <h2>Welcome to your user profile! 🔐</h2>
+    <div className="dashboard-layout">
+      <Sidebar />
+      <DashboardMain favorites={favorites} />
     </div>
   );
 }

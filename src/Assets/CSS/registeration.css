@@ -18,6 +18,8 @@
     left: 2rem;
   }
   
+
+
   @media (max-width: 576px) {
     .back-home-wrapper {
       left: 1rem;
